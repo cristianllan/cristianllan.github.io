@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(223, 223, 223);
+        }
+        header{
+            background-color: rgb(255, 235, 59);
+            padding: 15px;
+            text-align: center;
+            font-size: 25px;
+            color: blue;
+        }nav{
+            float: left;
+            width: 30%;
+            height: 300px;
+            background-color: rgb(0, 4, 255);
+            padding: 20px;
+            
+        }nav-ul{
+            list-style-type: none;
+            padding: 0;
+        }article{
+            float: right;
+            padding: 20px;
+            width: 68%;
+            background-color: rgb(0, 5, 255);
+            height: 300px;
+            color: white;
+        }section::after{
+            content: "";
+            display: table;
+            clear: both;
+        }footer{
+            background-color: darkgray;
+            padding: 10px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        
+        @media(max-width: 600px){
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>COPPEL</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="">Telefonos</a></li>
+                <li><a href="">Linea blanca</a></li>
+                <li><a href="">Niños</a></li>
+            </ul>
+        </nav>
+        <article style="text-align: center;">
+            <h1>Lista de telefonos celulares</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate sit doloremque eaque molestiae, ab quasi fuga, illo culpa vel exercitationem quis. Dolorum suscipit doloribus quaerat laboriosam, saepe eveniet aliquam molestias.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente odio est voluptates ipsam earum, minus ea tenetur praesentium reiciendis recusandae eaque delectus vero quam, enim sit magni dolor quos nihil?
+            </p>
+        </article>
+    </section>
+    <footer style="text-align: end;">
+        <b>Tienda en linea &copy; 2023</b>
+        <br>
+        <b>Practica 4- Llanes Peraza Cristhian</b>
+    </footer>
+    
+</body>
+</html>
