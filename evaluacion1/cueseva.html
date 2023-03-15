@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Registro cliente</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color:yellow ;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">COPel107</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Iniciar Sesión
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="inise.html">Iniciar sesión</a></li>
+                  <li><a class="dropdown-item" href="cueseva.html">Crear cuenta</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    <center><h1>Registrarse</h1></center>
+    <label for="nombre">Nombre</label>
+    <input type="text" placeholder="Teclee su nombre" required><br><br>
+
+    <label for="edad">Edad</label>
+    <input type="text" placeholder="Teclea la Edad" required><br><br>
+
+    <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+    <input type="date" required><br><br>
+    
+    <input type="radio" name="sexo" required> Femenino
+    <input type="radio" name="sexo" required> Masculino
+    <br>
+    <label for="direccion">Direccion</label><br>
+    
+    <div style="border: 2px solid yellow; width:16%;">
+    <textarea name="direccion" id="" cols="30" rows="10" placeholder="Teclee su direccion"></textarea>
+</div>
+     <br>
+    <label for="Estado">Estado</label>
+    <select name="Estado" id="">
+        <option value="">Selecciona un estado</option>
+        <option value="Sinaloa">Sinaloa</option>
+        <option value="Jalisco">Jalisco</option>
+        <option value="Chiapas">Chiapas</option>
+    </select><br><br>
+
+    <label for="imagen_perfil"><b>Imagen de perfil</b></label><br>
+    <input type="file" accept="png/jpg"><br><br>
+
+    <input type="submit" value="Guardar cliente"><br><br><br>
+
+    <script src="js/jquery-3.6.3.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
